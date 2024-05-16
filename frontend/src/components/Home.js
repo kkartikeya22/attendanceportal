@@ -5,7 +5,7 @@ function Home() {
   const [attendance, setAttendance] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/attendance')
+    axios.get('https://attendanceportal-2.onrender.com/api/attendance')
       .then(response => setAttendance(response.data))
       .catch(error => console.error(error));
   }, []);
