@@ -7,7 +7,7 @@ function AddAttendance() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://attendanceportal-2.onrender.com//api/attendance', { name, status })
+    axios.post('https://attendanceportal-2.onrender.com/api/attendance', { name, status })
       .then(response => {
         console.log(response.data);
         setName('');
